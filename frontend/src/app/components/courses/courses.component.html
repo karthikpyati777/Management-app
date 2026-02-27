@@ -1,0 +1,16 @@
+<div class="courses-container">
+  <div class="container">
+    <h1>Available Courses</h1>
+    <div class="courses-grid">
+      <div class="course-card" *ngFor="let course of courses">
+        <div class="course-image">📖</div>
+        <h3>{{course.title}}</h3>
+        <p>{{course.description}}</p>
+        <div class="course-footer">
+          <span class="price">${{course.price}}</span>
+          <button (click)="enroll(course.id)" class="btn-enroll">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

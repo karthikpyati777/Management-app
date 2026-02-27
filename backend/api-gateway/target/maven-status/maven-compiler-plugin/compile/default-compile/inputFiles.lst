@@ -1,0 +1,5 @@
+C:\course-platform\backend\api-gateway\src\main\java\com\platform\gateway\ApiGatewayApplication.java
+C:\course-platform\backend\api-gateway\src\main\java\com\platform\gateway\config\GatewayConfig.java
+C:\course-platform\backend\api-gateway\src\main\java\com\platform\gateway\config\SecurityConfig.java
+C:\course-platform\backend\api-gateway\src\main\java\com\platform\gateway\exception\GlobalErrorHandler.java
+C:\course-platform\backend\api-gateway\src\main\java\com\platform\gateway\filter\LoggingFilter.java

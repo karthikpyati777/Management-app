@@ -1,0 +1,15 @@
+com\platform\user\model\User.class
+com\platform\user\config\WebClientConfig.class
+com\platform\user\exception\DuplicateResourceException.class
+com\platform\user\service\UserService.class
+com\platform\user\controller\UserController.class
+com\platform\user\exception\GlobalExceptionHandler.class
+com\platform\user\exception\ServiceCommunicationException.class
+com\platform\user\config\SwaggerConfig.class
+com\platform\user\config\JwtProperties.class
+com\platform\user\dto\LoginRequest.class
+com\platform\user\dto\LoginResponse.class
+com\platform\user\dto\CourseDTO.class
+com\platform\user\repository\UserRepository.class
+com\platform\user\exception\ResourceNotFoundException.class
+com\platform\user\UserServiceApplication.class

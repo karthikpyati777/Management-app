@@ -1,0 +1,72 @@
+<div class="admin-container">
+  <div class="admin-header">
+    <h2>📚 Course Management</h2>
+    <button class="btn-primary" (click)="openForm()">+ Add Course</button>
+  </div>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Instructor ID</th>
+          <th>Duration</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of courses">
+          <td>{{course.id}}</td>
+          <td>{{course.title}}</td>
+          <td>{{course.description | slice:0:50}}...</td>
+          <td>{{course.instructorId}}</td>
+          <td>{{course.duration}}</td>
+          <td>${{course.price}}</td>
+          <td>
+            <button class="btn-edit" (click)="openForm(course)">Edit</button>
+            <button class="btn-delete" (click)="deleteCourse(course.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Form -->
+  <div class="modal" *ngIf="showForm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>{{editMode ? 'Edit Course' : 'Add New Course'}}</h3>
+        <button class="close-btn" (click)="closeForm()">&times;</button>
+      </div>
+      <form (ngSubmit)="saveCourse()">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" [(ngModel)]="currentCourse.title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea [(ngModel)]="currentCourse.description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Instructor ID</label>
+          <input type="number" [(ngModel)]="currentCourse.instructorId" name="instructorId" required>
+        </div>
+        <div class="form-group">
+          <label>Duration (weeks)</label>
+          <input type="number" [(ngModel)]="currentCourse.duration" name="duration" placeholder="e.g., 8" required>
+        </div>
+        <div class="form-group">
+          <label>Price ($)</label>
+          <input type="number" [(ngModel)]="currentCourse.price" name="price" step="0.01" required>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" (click)="closeForm()">Cancel</button>
+          <button type="submit" class="btn-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

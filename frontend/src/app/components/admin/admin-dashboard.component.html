@@ -1,0 +1,27 @@
+<div class="admin-layout">
+  <nav class="admin-sidebar">
+    <div class="sidebar-header">
+      <h2>🎓 Admin Panel</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li [class.active]="activeTab === 'users'" (click)="setActiveTab('users')">
+        <span>👥 Users</span>
+      </li>
+      <li [class.active]="activeTab === 'courses'" (click)="setActiveTab('courses')">
+        <span>📚 Courses</span>
+      </li>
+      <li [class.active]="activeTab === 'enrollments'" (click)="setActiveTab('enrollments')">
+        <span>🎓 Enrollments</span>
+      </li>
+      <li (click)="logout()" class="logout">
+        <span>🚪 Logout</span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="admin-content">
+    <app-admin-users *ngIf="activeTab === 'users'"></app-admin-users>
+    <app-admin-courses *ngIf="activeTab === 'courses'"></app-admin-courses>
+    <app-admin-enrollments *ngIf="activeTab === 'enrollments'"></app-admin-enrollments>
+  </div>
+</div>

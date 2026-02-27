@@ -1,0 +1,17 @@
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\config\JwtProperties.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\config\SwaggerConfig.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\config\UserServiceProperties.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\config\WebClientConfig.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\controller\CourseController.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\controller\EnrollmentController.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\CourseServiceApplication.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\exception\GlobalExceptionHandler.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\exception\InvalidRequestException.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\exception\ResourceNotFoundException.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\exception\ServiceCommunicationException.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\model\Course.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\model\Enrollment.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\repository\CourseRepository.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\repository\EnrollmentRepository.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\service\CourseService.java
+C:\course-platform\backend\course-service\src\main\java\com\platform\course\service\EnrollmentService.java

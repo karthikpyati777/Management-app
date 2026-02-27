@@ -1,0 +1,5 @@
+com\platform\gateway\config\SecurityConfig.class
+com\platform\gateway\exception\GlobalErrorHandler.class
+com\platform\gateway\ApiGatewayApplication.class
+com\platform\gateway\config\GatewayConfig.class
+com\platform\gateway\filter\LoggingFilter.class

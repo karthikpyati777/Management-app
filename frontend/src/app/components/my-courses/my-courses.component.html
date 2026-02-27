@@ -1,0 +1,19 @@
+<div class="my-courses-container">
+  <div class="container">
+    <h1>My Enrolled Courses</h1>
+    <div class="courses-grid">
+      <div class="course-card" *ngFor="let enrollment of enrollments">
+        <div class="course-image">🎓</div>
+        <h3>Course ID: {{enrollment.courseId}}</h3>
+        <p>Enrolled on: {{enrollment.enrolledAt | date:'medium'}}</p>
+        <div class="enrollment-info">
+          <span class="badge">Enrolled</span>
+        </div>
+      </div>
+      <div *ngIf="enrollments.length === 0" class="no-courses">
+        <p>You haven't enrolled in any courses yet.</p>
+        <a routerLink="/courses" class="btn-browse">Browse Courses</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\config\JwtProperties.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\config\SwaggerConfig.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\config\WebClientConfig.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\controller\UserController.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\dto\CourseDTO.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\dto\LoginRequest.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\dto\LoginResponse.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\exception\DuplicateResourceException.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\exception\GlobalExceptionHandler.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\exception\ResourceNotFoundException.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\exception\ServiceCommunicationException.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\model\User.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\repository\UserRepository.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\service\UserService.java
+C:\course-platform\backend\user-service\src\main\java\com\platform\user\UserServiceApplication.java

@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="container">
+    <h1 class="logo">Course Platform</h1>
+    <div class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/courses" routerLinkActive="active">Courses</a>
+      <a *ngIf="isLoggedIn" routerLink="/my-courses" routerLinkActive="active">My Courses</a>
+      <a *ngIf="isLoggedIn && isAdmin" routerLink="/admin" routerLinkActive="active">Admin</a>
+      <a *ngIf="!isLoggedIn" routerLink="/login" routerLinkActive="active">Login</a>
+      <a *ngIf="!isLoggedIn" routerLink="/register" routerLinkActive="active">Register</a>
+      <button *ngIf="isLoggedIn" (click)="logout()" class="btn-logout">Logout ({{username}})</button>
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Course Platform. All rights reserved.</p>
+  </div>
+</footer>

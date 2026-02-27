@@ -1,0 +1,35 @@
+<div class="admin-container">
+  <div class="admin-header">
+    <h2>🎓 Enrollment Management</h2>
+  </div>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Enrollment ID</th>
+          <th>User ID</th>
+          <th>Course ID</th>
+          <th>Course Title</th>
+          <th>Enrolled At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let enrollment of enrollments">
+          <td>{{enrollment.id}}</td>
+          <td>{{enrollment.userId}}</td>
+          <td>{{enrollment.courseId}}</td>
+          <td>{{enrollment.courseTitle}}</td>
+          <td>{{enrollment.enrolledAt | date:'short'}}</td>
+          <td>
+            <button class="btn-delete" (click)="unenroll(enrollment.id)">Remove</button>
+          </td>
+        </tr>
+        <tr *ngIf="enrollments.length === 0">
+          <td colspan="6" style="text-align: center; padding: 40px;">No enrollments found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

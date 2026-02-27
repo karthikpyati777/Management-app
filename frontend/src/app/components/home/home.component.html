@@ -1,0 +1,33 @@
+<div class="hero">
+  <div class="particles">
+    <span *ngFor="let i of [].constructor(50); let idx = index" 
+          [style.left.%]="(idx * 7) % 100" 
+          [style.animation-delay.s]="idx * 0.1">
+    </span>
+  </div>
+  <div class="container">
+    <h1 class="hero-title">
+      <span class="word">Welcome</span>
+      <span class="word">to</span>
+      <span class="word">Course</span>
+      <span class="word">Platform</span>
+    </h1>
+    <p class="hero-subtitle">Learn new skills, advance your career</p>
+    <button routerLink="/courses" class="btn-primary">
+      <span>Explore Courses</span>
+      <div class="btn-glow"></div>
+    </button>
+  </div>
+</div>
+
+<div class="features">
+  <div class="container">
+    <div class="feature-card" *ngFor="let feature of features; let i = index" 
+         [style.animation-delay.s]="i * 0.2">
+      <div class="icon">{{feature.icon}}</div>
+      <h3>{{feature.title}}</h3>
+      <p>{{feature.description}}</p>
+      <div class="card-shine"></div>
+    </div>
+  </div>
+</div>
